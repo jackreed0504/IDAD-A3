@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflection</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jack Reed Assignment 3 Documentation</h1>
+      <h2>Reflection</h2>
+    </header>
+    <main>
+      <h2>Overview</h2>
+      <img src="/assets/img1.png" alt="Project" />
+      <p>
+        Assignment 3 required me to create a UI ontop of the tone.js audio
+        system, responding to one of the provided creative prompts and one of
+        the provided JavaScript methods. I chose to use the creative prompt of
+        Novel Input and the JavaScript method of math.random(), to create an
+        interactive music piece where users can change the mix by interacting
+        with various objects.
+      </p>
+      <p>
+        My guiding values for this design were play and immersion. I wanted to
+        encourage exploration and play, and to create an experience that
+        immerses them in the the music. The lack of clear instructions (aside
+        from the modal which prompts them to play with the objects) and the lack
+        of labels or contextual understanding of the function of each object was
+        designed to encourage play. This was reinforced by the Monument Valley
+        influenced art style, featuring geometric shapes and structures which
+        evoke a sense of abstraction and surrealism, and the bright colours
+        which create a playful atmostphere. The ability for the user to control
+        the output of the music by interacting with the objects helped create an
+        immersive experience, making them feel part of creating the music.
+      </p>
+      <h2>Rationale</h2>
+      <h3>Feedback</h3>
+      <p>
+        My project features the feedback elements of the audio mix changing in
+        response to the user's interaction with the objects, as a means of
+        creating and immersive experience. For instance, the when the user drags
+        the pillars, this either changes the volume level of certain instruments
+        or the frequency of the filter, depending on which pillar. Clicking on
+        the diamond shape toggles the reverb effect, clicking on the sphere
+        toggles the delay effect, and clicking on the dice randomises the loops.
+        These feedback elements make the user feel as if they are part of
+        creating the music, creating an immersive experience.
+      </p>
+      <p>
+        I also used some visual feedback to make the experience more accessible
+        and understandable. While accessibility was not a guiding value of my
+        project, as I am focusing on encouraging play, I think it is important
+        to make it clear when the user is interacting with an object, or how
+        they should interact, so the experience is not frustrating or confusing.
+        When the user hovers over the pillars, the cursor changes to
+        "ns-resize", a CSS cursor setting, demonstrating that the objects can be
+        dragged vertically. When the user hovers over the diamond, sphere or
+        dice, the cursor changes to "pointer", making it clear that the objects
+        can be clicked. When the user clicks on the diamond or sphere, there is
+        a glow around the object, which makes it clear that the effects have
+        been switched on, and that it is a toggle rather than a trigger. When
+        the dice is clicked, it briefly lowers its brightness by adding and
+        removing a CSS class, making it clear that the button has been pressed
+        and that it is a trigger tather than a toggle.
+      </p>
+      <img src="/assets/img2.png" alt="Diamond" />
+      <h3>Information Design</h3>
+      <p>
+        The information design in my project is quite minimal, choosing to
+        provide minimal clear information to the user to focus instead of
+        encouraging play. At the beginning, a modal encourages the user to play
+        with the objects to begin, informs them that the experience is better on
+        larger screens, and there is also a prompt to be aware of the user's
+        audio setting, as interaction is required to enable sound in web
+        browsers. None of the objects feature labels of their function, and the
+        most clear information is the dice representing the random function. The
+        lack of labels encourages the user to explore the objects to learn their
+        purpose. Other than this, the objects glowing or briefly changing
+        brightness on engagement or changing position upon dragging provides
+        some information to the user to confirm their interaction. The use of
+        different CSS cursor types also provides the user with information on
+        how they are meant to interact with each object.
+      </p>
+      <img src="/assets/img3.png" alt="Modal" />
+      <h3>Mapping</h3>
+      <p>
+        The mapping of the controls in my project is designed to be mostly
+        intuitive, but still somewhat abstract to encourage the user to explore.
+        For instance, the draggable pillars can be interpreted as faders to
+        control volume or filter frequency, which is a common way to map these
+        controls in audio software. The diamond and sphere are much less obvious
+        in appearance, but their use as toggles allows the user to simply click
+        to turn them off and on, allowing for a clear result of their
+        interaction, rather than being able to adjust features of the effects
+        such as delay time or reverb amount, which may be less obvious and more
+        confusing for the user. The dice is a clear way to represent the
+        randomness function, and its function as a clickable button which
+        triggers a randomisation of the loops provides a playful way to engage
+        the user into the music piece.
+      </p>
+      <h3>Learnability</h3>
+      <p>
+        My project takes a balance between learnability and abstraction. While I
+        want to encourage play, I don't want the user to be confused as to how
+        to use the interface. The modal at the beginning provides the user with
+        some vague guidance to encourage them to explore the functions of the
+        different objects, helping them understand how to interact with the
+        piece as a whole. Apart from that, the iconography of the dice makes it
+        clear to the user that it randomises something, making it a clear
+        represented model that they already understand to an extent. None of the
+        other objects are represented models in their appearance, meaning the
+        user is forced to experiment in order to figure out what they do. The
+        audio feedback helps the user learn their function via experimenting
+        with the objects, and visual feedback such as cursor types and glow help
+        them learn how they are meant to be interacted with.
+      </p>
+      <img src="/assets/img4.png" alt="Dice" />
+      <h2>Significant Changes</h2>
+      <p>
+        During Assignment 2, we had a feedback session where we recieved
+        feedback about our work from our classmates. Some of the main points
+        that came up were that it wasn't super clear how the objects were meant
+        to be interacted with, and that the effect of the diamond wasn't very
+        clear. To make the interactions clearer, I added a glow around the
+        diamond and the sphere when they are clicked. I also added cursor
+        feedback using CSS cursor types, such as a pointer on the diamond and
+        sphere and a ns-resize cursor on the pillars so it is clear they can be
+        vertically dragged. To make the effect of the diamond (toggling the
+        reverb) more obvious, I changed the reverb dry/wet mix from 0.5 to 1, so
+        that it is clearer to the user what the diamond does.
+      </p>
+      <p>
+        I also made some changes to the CSS styling to make the site more
+        responsive to different screen sizes. While this project would be
+        difficult to represent on smaller screens such as mobile devices, I want
+        it to be accessible on as many device sizes as possible with the content
+        being displayed properly. I created a parent div using flexbox to
+        arrange the pillars so that they were responsive to the screen size. I
+        also switched to using percentage from rem for the sphere. To arrange
+        the diamond and glow (as the diamond glow is a separate image) so they
+        would follow eachother that resizing, I put them in a parent div with
+        "position" set to "relative" called 'allobj', which was positioned using
+        percentage for responsivity. The objects within it were positioned with
+        absolute position and "px", so they were placed precisely within the
+        div.
+      </p>
+      <p>
+        In my teacher feedback from Assignment 2, it was suggested that I take
+        the randomisation function further. I created multiple different loops
+        for each instrument, so the entire sound of the piece could be
+        completely randomised in different ways rather than just the snare drum
+        changing. I also added the dice button for randomisation, so that the
+        user doesn't have to reload the page to use the randomisation function
+        as they did before. This is a much clearer mapping of the function, and
+        makes the experience less frustrating than it was prior.
+      </p>
+      <h2>Production Timeline</h2>
+      <ul>
+        <li>
+          <h3>Week 1-5: Planning</h3>
+          <p>
+            The first step of producing this project was selecting the prompt
+            and the javascript function that I was using and deciding how the
+            project should take form. Next, I created sketches for the interface
+            to begin to visualise how it would appear. This part of the process
+            is seen on
+            <a href="https://jackreedidad2.netlify.app/plan2"
+              >this documentation page.</a
+            >
+          </p>
+        </li>
+        <li>
+          <h3>Week 6-8: Prototyping</h3>
+          <p>
+            I then began to develop a working prototype. I first created 2 loops
+            in Ableton Live to use in the project. I then started experimenting
+            with creating the 3D models to use as pngs in the project with
+            blender, which became difficult due to the appearance of shadows and
+            lighting on the models, making them look weird when dragged. I then
+            learned about using CSS 3D transforms, and researched these before
+            implementing them in the projects. I then used JavaScript to link
+            these objects with the tone.js system and complete the prototype, to
+            be presented to my classmates for feedback.
+          </p>
+          <h3>Week 9-now: Finalising</h3>
+          <p>
+            I first took down notes of the things that needed to be fixed within
+            my UI, such as bugs and usability issues. I then added fixes from my
+            feedback onto this list. I got a start on improving the responsivity
+            of the site. After a call with my teacher, I decided to make more
+            loops for the project in Ableton Live. I then implemented these
+            loops, and created a dice to enable the randomisation function.
+          </p>
+        </li>
+        <h2>Evaluation</h2>
+        <p>
+          The design aspect of this project that I am the most proud of is the
+          draggable pillars. This aspect, aside from the CSS transforms, took
+          the most research to get working, as I needed to use an external
+          library (jQuery UI) to make them draggable, and learn how to use its
+          attributes to translate the pillar position into a value for the
+          volume or frequency. I think draggable pillars were a perfect mapping
+          for these functions in this project, as they function like faders
+          while having an abstract appearance.
+        </p>
+        <p>
+          The design aspect I found most challenging was the sound composition
+          and design. I felt like due to time constraints and lack of focus on
+          this area over the functionality of the project, the time and focus
+          put into the music piece itself took the back seat, making it hard to
+          come up with something I was happy with, or that I felt complimented
+          the visuals or the experience. Furthermore, the basic loops rather
+          than a more complete piece make the experience repetitive and
+          unengaging. Overall, if I did a project like this again I would make
+          more time to focus on the musical portion of the interactive music
+          piece.
+        </p>
+      </ul>
+    </main>
+  </body>
+</html>
